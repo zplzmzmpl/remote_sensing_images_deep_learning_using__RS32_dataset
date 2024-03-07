@@ -1,0 +1,8 @@
+model	layer	激活函数	参数	output size	特点	精度
+model1	conv1	tanh	c=6,k=5,s=1,p=0	6*28*28	最简单的卷积神经网络	86
+	maxpool1		k=2,s=2	6*14*14		
+	conv2		c=16,k=5,s=1,p=0	16*10*10		
+	maxpool2		k=2,s=2	16*5*5		
+	fc1		in=-1,out=120			
+	fc2		in=120,out=84			
+	fc3		in=84,out=10			
