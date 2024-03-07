@@ -1,0 +1,33 @@
+model3	conv11	relu	c=64,k=3,s=1,p=1	64*32*32	"1.更小的卷积核尺寸、卷积步长
+2.使用批量归一化batchnorm代替局部响应归一化层lrn
+3.更深的网络"	91
+	bn1		f=64			
+	conv12		c=64.k=3,s=1,p=1	64*32*32		
+	bn2		f=64			
+	maxpool1		k=2,s=2	64*16*16		
+	conv21		c=128,k=3,s=1,p=1	128*16*16		
+	bn1		f=128			
+	conv22		c=128,k=3,s=1,p=1	128*16*16		
+	bn2		f=128			
+	conv23		c=128,k=3,s=1,p=1	128*16*16		
+	bn3		f=128			
+	maxpool2		k=2,s=2	128*8*8		
+	conv31		c=256,k=3,s=1,p=1	256*8*8		
+	bn1		f=256			
+	conv32		c=256,k=3,s=1,p=1	256*8*8		
+	bn2		f=256			
+	conv33		c=256,k=3,s=1,p=1	256*8*8		
+	bn3		f=256			
+	maxpool3		k=2,s=2	256*4*4		
+	conv41		c=512,k=3,s=1,p=1			
+	bn1		f=512			
+	conv42		c=512,k=3,s=1,p=1			
+	bn2		f=512			
+	conv43		c=512,k=3,s=1,p=1			
+	bn3		f=512			
+	maxpool		k=2,s=2			
+	fn1		in=-1,out=4090			
+	dropout		p=0.5			
+	fn2		in=4090,out=1000			
+	dropout		p=0.5			
+	fn3		in=1000,out=10			
