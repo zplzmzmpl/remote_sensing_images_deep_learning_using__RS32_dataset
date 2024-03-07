@@ -1,6 +1,16 @@
 # remote_sensing_images_deep_learning_using__RS32_dataset
 *rs images deep learning classification, use dataset RS32(collected by WHU)*
 
+> [!NOTE]  
+> sorted according to course "ML&CV" of CUG by zsq
+
+Navigation:
+
+[1.基于SVM和Softmax损失函数的线性分类器](#1-基于svm和softmax损失函数的线性分类器)
+  [1.1使用线性分类器](#1.1-使用线性分类器)
+  [1.2 预处理步骤](#1.2-预处理步骤)
+    
+
 **数据集说明如下:**
 
 HelloRS数据集由12800张32*32的 RGB 彩色图片构成，共10个分类，分别为：水域（Waters）、森林（Forest）、农用地（CultivateLand）、河流（River）、高速路（Highway）、高压线塔（Pylon）、游泳池（SwimmingPool）、网球场（TennisCourt）、篮球场（BasketballCourt）、足球场（FootballField）。采用按分类目录存放数据，包括验证集、训练集、测试集等，其结构为与内容如下：
