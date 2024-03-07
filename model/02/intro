@@ -1,0 +1,17 @@
+model2	conv1	relu	c=96,k=7,s=1,p=3	96*32*32	"1.使用了relu作为激活函数
+2.在线性层中加入dropout
+3.使用局部响应归一化层lrn
+4.相比与modle1拥有更深的卷积层"	88
+	maxpol1		k=3,s=2	96*15*15		
+	lrn1		f=96			
+	conv2		c=128,k=5,s=1,p=2	128*15*15		
+	maxpol2		k=3,s=2	128*7*7		
+	lrn2		f=128			
+	conv3		c=256,k=3,s=1,p=1	256*7*7		
+	maxpool3		k=3,s=2	256*3*3		
+	lrn3		f=256			
+	fn1		in=-1,out=4096			
+	dropout		p=0.5			
+	fn2		in=4096,out=4096			
+	dropout		p=0.5			
+	fn3		in=4096,out=10			
