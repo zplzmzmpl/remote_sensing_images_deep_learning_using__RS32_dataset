@@ -6,21 +6,14 @@
 
 Navigation:
 ---
-[1.基于SVM和Softmax损失函数的线性分类器](#1-基于svm和softmax损失函数的线性分类器)
-
-  [1.1使用线性分类器](#11-使用线性分类器)
-  
-  [1.2 预处理步骤](#12-预处理步骤)
-  
-  [1.3 计算梯度的两种方法](#13-计算梯度的两种方法)
-
-  [1.4 损失函数（Loss Function）](#14-损失函数loss-function)
-
-  [1.5 随机梯度下降Stochastic Gradient Descent](#15-随机梯度下降stochastic-gradient-descent)
-
-[2 实现简单的全连接层网络](#2-实现简单的全连接层网络)
-
-[3 实现不同卷积神经网络对HelloRS32数据集分类](#3-实现不同卷积神经网络对hellors32数据集分类)
+- [1.基于SVM和Softmax损失函数的线性分类器](#1-基于svm和softmax损失函数的线性分类器)
+  - [1.1使用线性分类器](#11-使用线性分类器)
+  - [1.2 预处理步骤](#12-预处理步骤)
+  - [1.3 计算梯度的两种方法](#13-计算梯度的两种方法)
+  - [1.4 损失函数（Loss Function）](#14-损失函数loss-function)
+  - [1.5 随机梯度下降Stochastic Gradient Descent](#15-随机梯度下降stochastic-gradient-descent)
+- [2 实现简单的全连接层网络](#2-实现简单的全连接层网络)
+- [3 实现不同卷积神经网络对HelloRS32数据集分类](#3-实现不同卷积神经网络对hellors32数据集分类)
 
 ---
 
